@@ -25,7 +25,7 @@ with(hhpower, lines(timepower, as.numeric(hhpower$Sub_metering_3), col="blue"))
 #Create legend
 legend("topright", 
        legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
-       col=c("black", "red", "blue"), lty=1, bty="n", cex=0.75)
+       col=c("black", "red", "blue"), lty=1, bty="n",x.intersp=0.5, y.intersp = 0.5, xjust = 1)
 
 #Create third plot based on requirement
 voltpower <- plot(timepower, as.numeric(hhpower$Voltage), type="l", xlab="datetime", ylab="Voltage", main="")
